@@ -35,4 +35,10 @@ public class Kuehlschrank {
             }
         }
     }
+    public static void main(String argv[]) {
+    	Kuehlschrank kschrank = new Kuehlschrank(10);
+    	kschrank.einkaufen();
+    	kschrank.auflisten();
+    	kschrank.verbrauchen();
+}
 }
