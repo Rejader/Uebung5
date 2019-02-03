@@ -16,10 +16,6 @@ public class Kuehlschrank {
         kuehlschrank[fuellstand++] = (new Brot(3, 1000));
         kuehlschrank[fuellstand++] = (new Wurst("Soja Spezial", 100));
         kuehlschrank[fuellstand++] = (new Wasser("Still", 2000));
-        //TODO remove
-        kuehlschrank[fuellstand++] = (new Wasser("MarkoBla0", 201));
-        kuehlschrank[fuellstand++] = (new Wasser("MarkoBla1", 200));
-        kuehlschrank[fuellstand++] = (new Wasser("MarkoBla2", 199));
     }
 
     public void auflisten() {
