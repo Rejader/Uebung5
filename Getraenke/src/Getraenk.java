@@ -1,11 +1,16 @@
-public class Speise extends Lebensmittel {
+public class Getraenk extends Lebensmittel {
 
-    public Speise(String name, int menge) {
+    public Getraenk(String name, int menge) {
         super(name, menge);
     }
 
     @Override
     public boolean essen() {
+        return false;
+    }
+
+    @Override
+    public boolean trinken() {
         if(menge < 0) {
             menge = 0;
             return false;
@@ -14,16 +19,11 @@ public class Speise extends Lebensmittel {
     }
 
     @Override
-    public boolean trinken() {
-        return false;
-    }
-
-    @Override
     public String status() {
-        return super.status() + "g";
+        return super.status() + "ml";
     }
 
-    public void essen(int menge) {
+    public void trinken(int menge) {
         this.menge = this.menge - menge;
     }
 }
